@@ -1,53 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f4f4;
-  color: #222;
-}
-
-header {
-  background: #222;
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-header nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  background: #fff;
-  margin: 2rem auto;
-  padding: 2rem 1rem;
-  max-width: 700px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #0001;
-}
-
-.project-list {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.project {
-  border: 1px solid #eee;
-  padding: 1em;
-  border-radius: 6px;
-  background: #fafafa;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  background: #222;
-  color: #fff;
-  margin-top: 2rem;
-}
+:root { --max: 1000px; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; }
+header, footer { background: #f6f7f9; }
+.container { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+nav a { margin-right: .75rem; text-decoration: none; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 1rem; margin-top: 1rem; }
+.card { border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem; background: white; }
+.card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; }
+.card h3 { margin: .5rem 0 0; }
+.card p { margin: .25rem 0; color: #555; }
+.badges { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .5rem; }
+.badge { padding: .25rem .5rem; border-radius: 999px; border: 1px solid #ddd; font-size: .8rem; }
